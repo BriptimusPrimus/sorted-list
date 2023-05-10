@@ -1,0 +1,20 @@
+{
+  "dal": {
+    "module": "mocks/mockdb",
+    "datasources": {
+      "employees": {
+        "file": "employees.json",
+        "mockResponseDelay": 1000
+      },
+      "customers": {
+        "file": "customers.json",
+        "mockResponseDelay": 1000
+      },
+      "addresses": {
+        "file": "addresses.json",
+        "mockResponseDelay": 1000
+      }
+    }
+  },
+  "mainPage": "templates/dev.html"
+}

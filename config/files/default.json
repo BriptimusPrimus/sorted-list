@@ -1,0 +1,39 @@
+{
+  "data_service": {
+    "api": {
+      "protocol": "http",
+      "host": "localhost",
+      "port": "3000",
+      "root": "api",
+      "employees_data": "employees",
+      "customers_data": "customers",
+      "customer_details": "customer",
+      "display_details": "details"
+    },
+    "defaulCount": 10
+  },
+  "dal": {
+    "module": "implementations/remotedataSecure",
+    "databases": {
+      "employees": {
+        "connectionOptions": {
+          "host": "localhost",
+          "user": "myusr",
+          "password": "123456",
+          "database": "sorted_list"
+        },
+        "timeout": 5000
+      },
+      "videostore": {
+        "connectionOptions": {
+          "host": "localhost",
+          "user": "myusr",
+          "password": "123456",
+          "database": "sakila"
+        },
+        "timeout": 5000
+      }
+    }
+  },
+  "mainPage": "dist/public/index.html"
+}
